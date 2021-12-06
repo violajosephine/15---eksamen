@@ -201,7 +201,7 @@ header {
 
 #footer h3 {
   text-align: center;
-  color: var(--brown_text);
+  font-weight: bold;
 }
 
 #dpf_logo {

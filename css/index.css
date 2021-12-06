@@ -38,7 +38,7 @@
 #problemer {
   background-color: var(--pinetree);
   padding-top: 50px;
-  padding-bottom: 50px;
+
   color: var(--white);
 }
 
@@ -146,6 +146,47 @@
 }
 .blog_se_flere:hover {
   color: var(--purplebrown) !important;
+}
+
+/* -----------FREDAGSMAIL----------- */
+
+#fredagsmail {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+}
+
+#fredagsmail p {
+  max-width: 700px;
+}
+.form_div {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+
+  justify-content: center;
+  margin-bottom: 0 !important;
+}
+
+.form_div input {
+  margin: 10px;
+  border: 2px solid var(--purplebrown);
+  padding: 10px;
+  background-color: inherit;
+  color: var(--purplebrown);
+}
+#submit {
+  color: var(--purplebrown) !important;
+}
+
+#submit:hover {
+  background-color: var(--purplebrown);
+  color: var(--creme) !important;
+  transition: 0.2s;
 }
 
 /* ------------MEDIA QUIERIES------------ */
