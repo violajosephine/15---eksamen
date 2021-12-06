@@ -1,0 +1,155 @@
+/* --------------ROOT------------- */
+:root {
+  --white: #ffffff;
+  --creme: #f2ede2;
+  --hasselnut: #d8cdc2;
+  --purplebrown: #4c0b05;
+  --pinetree: #738153;
+
+  --bodoni: ltc-bodoni-175, serif;
+  --nunito: nunito-sans, sans-serif;
+}
+
+/* --------------BODY-------------- */
+
+body {
+  background-color: var(--creme);
+  color: var(--purplebrown);
+}
+main {
+  margin-top: 200px;
+  font-family: bod;
+}
+
+p,
+li {
+  font-variant: var(--nunito);
+}
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2,
+h3 {
+  font-family: var(--bodoni);
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-family: var(--bodoni);
+}
+
+/* -----------HEADER-------------- */
+.navbar {
+  background-color: var(--creme);
+}
+
+.logo {
+  width: 200px;
+  filter: invert(7%) sepia(57%) saturate(3718%) hue-rotate(352deg)
+    brightness(105%) contrast(101%);
+  position: absolute;
+}
+
+.navbar-brand {
+  margin: auto;
+}
+
+.navbar-toggler {
+  background: none;
+  color: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding-top: 20px;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  flex-direction: column;
+  background-image: none !important;
+}
+
+.bar {
+  background-image: url(../assets/bar.png);
+  background-repeat: none;
+  height: 3px;
+  width: 25px;
+  margin-bottom: 5px;
+  background-size: contain;
+}
+
+.bar.one {
+  animation: 2s;
+  transition: 0.5s;
+}
+
+.bar.two {
+  animation: 2s;
+  transition: 0.5s;
+}
+
+.bar.three {
+  animation: 2s;
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .bar.one {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .bar.two {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .bar.three {
+  transform: rotate(-45deg) translate(11px, -11px);
+  transition: 0.5s;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar .fixed-top {
+  box-shadow: 0px 0px 2px grey;
+}
+
+.navbar-nav {
+  margin-left: 50px;
+  margin: auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.navbar-nav li a {
+  color: var(--purplebrown) !important
+  ;
+}
+.navbar-nav li a:hover {
+  color: #947d7a !important;
+}
+
+#book {
+  border: 2px solid var(--purplebrown);
+}
+#book:hover {
+  background-color: var(--purplebrown);
+  color: var(--creme) !important;
+}
+
+.nav-link {
+  padding: 10px !important;
+}
+
+#navbarNavAltMarkup {
+  background-color: none;
+}
+
+.nav-shadow {
+  box-shadow: 0px 0px 10px grey;
+}
