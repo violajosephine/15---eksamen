@@ -17,8 +17,11 @@ body {
   color: var(--purplebrown);
 }
 main {
-  margin-top: 200px;
-  font-family: bod;
+  margin-top: 150px;
+}
+
+main div {
+  margin-bottom: 50px !important;
 }
 
 p,
@@ -43,6 +46,11 @@ h4 {
   font-family: var(--bodoni);
 }
 
+a {
+  font-family: var(--bodoni);
+  text-decoration: none;
+}
+
 /* -----------HEADER-------------- */
 header {
   font-family: var(--bodoni);
@@ -53,7 +61,7 @@ header {
 }
 
 .logo1 {
-  width: 200px;
+  width: 0px;
   filter: invert(7%) sepia(57%) saturate(3718%) hue-rotate(352deg)
     brightness(105%) contrast(101%);
   width: 0;
@@ -63,6 +71,10 @@ header {
   width: 80px;
   filter: invert(7%) sepia(57%) saturate(3718%) hue-rotate(352deg)
     brightness(105%) contrast(101%);
+}
+
+.logo2 img {
+  max-height: 100%;
 }
 
 .navbar-brand {
@@ -161,24 +173,59 @@ header {
   background-color: none;
 }
 
-.nav-shadow {
-  box-shadow: 0px 0px 5px rgb(167, 167, 167);
-}
 .dropdown-menu {
-  background-color: inherit !important;
+  background-color: var(--creme) !important;
   border: none;
+  border-radius: 0;
 }
 
 .dropdown-item:hover {
   background-color: inherit !important;
 }
 
+/* ---------footer---------- */
+
+#footer {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  gap: 50px 50px;
+  font-family: var(--bodoni);
+  border-top: 1px solid var(--purplebrown);
+  padding-top: 30px;
+}
+
+#footer h3 {
+  text-align: center;
+  color: var(--brown_text);
+}
+
+#dpf_logo {
+  max-width: 300px;
+}
+
+#map {
+  box-shadow: 0px 0px 5px 0px grey;
+}
+
+#by_viola {
+  text-align: center;
+  opacity: 0.8;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* ------------MEDIA QUIERIES------------ */
 @media screen and (max-width: 991px) {
   .logo1 {
     width: 80px;
   }
   .logo2 {
-    width: 0;
+    height: 0;
   }
 
   .navbar-nav {
@@ -187,5 +234,16 @@ header {
   }
   .dropdown-menu {
     margin-left: 30px;
+  }
+  #footer {
+    flex-wrap: wrap;
+  }
+
+  .nav-shadow {
+    box-shadow: 0px 0px 5px rgb(167, 167, 167);
+  }
+
+  #first_container {
+    flex-wrap: wrap;
   }
 }
