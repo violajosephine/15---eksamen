@@ -44,15 +44,25 @@ h4 {
 }
 
 /* -----------HEADER-------------- */
+header {
+  font-family: var(--bodoni);
+}
+
 .navbar {
   background-color: var(--creme);
 }
 
-.logo {
+.logo1 {
   width: 200px;
   filter: invert(7%) sepia(57%) saturate(3718%) hue-rotate(352deg)
     brightness(105%) contrast(101%);
-  position: absolute;
+  width: 0;
+}
+
+.logo2 {
+  width: 80px;
+  filter: invert(7%) sepia(57%) saturate(3718%) hue-rotate(352deg)
+    brightness(105%) contrast(101%);
 }
 
 .navbar-brand {
@@ -123,8 +133,9 @@ h4 {
 .navbar-nav {
   margin-left: 50px;
   margin: auto;
-  align-items: flex-start;
-  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
 }
 .navbar-nav li a {
   color: var(--purplebrown) !important
@@ -151,5 +162,30 @@ h4 {
 }
 
 .nav-shadow {
-  box-shadow: 0px 0px 10px grey;
+  box-shadow: 0px 0px 5px rgb(167, 167, 167);
+}
+.dropdown-menu {
+  background-color: inherit !important;
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: inherit !important;
+}
+
+@media screen and (max-width: 991px) {
+  .logo1 {
+    width: 80px;
+  }
+  .logo2 {
+    width: 0;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .dropdown-menu {
+    margin-left: 30px;
+  }
 }
