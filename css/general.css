@@ -6,7 +6,7 @@
   --purplebrown: #4c0b05;
   --pinetree: #738153;
 
-  --bodoni: ltc-bodoni-175, serif;
+  --lust: lust, serif;
   --nunito: nunito-sans, sans-serif;
 }
 
@@ -29,31 +29,42 @@ li {
   font-variant: var(--nunito);
 }
 h2 {
-  text-align: center;
   margin-bottom: 30px;
 }
 
-h2,
-h3 {
-  font-family: var(--bodoni);
+h2 {
+  font-family: var(--lust);
+  font-size: 1.8rem;
 }
 
 h3 {
+  font-family: var(--lust);
   font-size: 1.4rem;
 }
 
 h4 {
-  font-family: var(--bodoni);
+  font-family: var(--lust);
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-family: var(--lust);
+  font-size: 1rem;
 }
 
 a {
-  font-family: var(--bodoni);
+  font-family: var(--nunito);
   text-decoration: none;
+}
+
+.ekstern {
+  text-align: center;
+  margin-top: 20%;
 }
 
 /* -----------HEADER-------------- */
 header {
-  font-family: var(--bodoni);
+  font-family: var(--nunito);
 }
 
 .navbar {
@@ -194,14 +205,13 @@ header {
   margin-bottom: 50px;
   margin-top: 50px;
   gap: 50px 50px;
-  font-family: var(--bodoni);
+  font-family: var(--nunito);
   border-top: 1px solid var(--purplebrown);
   padding-top: 30px;
 }
 
-#footer h3 {
+#footer h4 {
   text-align: center;
-  font-weight: bold;
 }
 
 #dpf_logo {

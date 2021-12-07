@@ -1,0 +1,52 @@
+/* --------------ROOT------------- */
+:root {
+  --white: #ffffff;
+  --creme: #f2ede2;
+  --hasselnut: #d8cdc2;
+  --purplebrown: #4c0b05;
+  --pinetree: #738153;
+
+  --lust: lust, serif;
+  --nunito: nunito-sans, sans-serif;
+}
+
+main {
+  margin-top: 100px;
+}
+/* ---------------HERO--------------- */
+
+#hero {
+  width: 100%;
+  height: 400px;
+  background-image: url(../assets/images_website/psykologhuset_hestbech_nina_hestbech.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* -----------------INTRO----------------- */
+
+#intro,
+#reflektion,
+#kontakt {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+}
+
+/* ------------REFLEKTION------------ */
+
+#reflektion {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+/* -------------KONTAKT------------- */
+
+#kontakt {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+
+.kontakt_text {
+  margin-right: 30px;
+}
