@@ -29,6 +29,63 @@ main {
   padding-top: 0;
 }
 
+/* -------------CV------------- */
+
+#cv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+#core {
+  width: 2px;
+  background-color: var(--purplebrown);
+  height: 900px;
+}
+
+.streg {
+  height: 2px;
+  width: 100px;
+  background-color: var(--purplebrown);
+  margin: 0 !important;
+}
+
+.box_left1,
+.box_left2,
+.box_left3,
+.box_left4,
+.box_left5,
+.box_right1,
+.box_right1,
+.box_right2,
+.box_right3,
+.box_right4,
+.box_right5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#cv p {
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+
+#leftelements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#rightelements {
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  justify-content: space-between;
+}
+
 /* ------------REFLEKTION------------ */
 
 #reflektion {
