@@ -13,24 +13,20 @@
 main {
   margin-top: 100px;
 }
-/* ---------------HERO--------------- */
-
-#hero {
-  width: 100%;
-  height: 400px;
-  background-image: url(../assets/images_website/psykologhuset_hestbech_nina_hestbech.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 /* -----------------INTRO----------------- */
 
 #intro,
 #reflektion,
-#kontakt {
-  max-width: 1000px;
+#kontakt,
+.intro_img {
+  max-width: 800px;
   margin: auto;
   padding: 40px;
+}
+.intro_img {
+  max-width: 700px;
+  padding-top: 0;
 }
 
 /* ------------REFLEKTION------------ */

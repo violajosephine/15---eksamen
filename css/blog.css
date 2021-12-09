@@ -17,10 +17,11 @@
 }
 
 #intro {
-  max-width: 1000px;
+  max-width: 800px;
   padding: 40px;
   margin: auto;
   padding-bottom: 0;
+  text-align: center;
 }
 
 /* ------------BLOGINDLÆG------------ */
@@ -46,12 +47,12 @@
 
 .blogpost {
   background-color: var(--purplebrown);
-  max-width: 250px;
   margin-bottom: 0 !important;
 }
 
 #blog a {
-  margin: 40px;
+  max-width: 250px;
+  margin: 30px;
 }
 
 .blogpost img {
@@ -97,4 +98,22 @@
 
 #forslag img {
   max-width: 300px;
+}
+
+/* ------------MEDIA QUIERIES------------ */
+@media screen and (max-width: 550px) {
+  #forslag {
+    max-width: 90%;
+  }
+
+  #blog a {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 0 !important;
+    max-width: 80%;
+  }
+
+  .blogpost h5 {
+    font-size: 1.3rem;
+  }
 }

@@ -16,6 +16,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: flex-start;
   max-width: 980px;
   margin: auto;
 }
@@ -33,6 +34,10 @@
   font-size: 1.1rem;
 }
 
+#intro_text_div img {
+  max-width: 250px;
+}
+
 /* ------------PROBLEMER------------ */
 
 #problemer {
@@ -45,7 +50,8 @@
   background-image: url(../assets/images_website/whitelines.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: left;
+  margin-bottom: 100px !important;
 }
 
 .problems {
@@ -69,34 +75,51 @@
 }
 
 /* ------------CAROUSEL------------ */
-.carousel-item {
-  padding: 50px;
+
+#anmeldelser {
+  max-width: 1100px;
+  margin: auto;
 }
 
-.carousel-item.active,
-.carousel-item-next {
-  background-color: var(--white);
+.carousel-item {
+  padding: 30px;
 }
 
 .carousel-inner {
-  max-width: 700px;
   margin: auto;
+  max-width: 800px;
+}
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  background-color: var(--white);
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+}
+
+#anmeldelser h3 {
+  margin-bottom: 30px;
 }
 
 /* -----------LETTER TO NINA----------- */
 
 #lettertonina_div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  max-width: 980px;
+  max-width: 1200px;
   margin: auto;
   align-items: center;
+  padding-bottom: 70px;
 }
 
 .text_letter {
   text-align: center;
   max-width: 400px;
+  font-size: 1.3rem;
 }
 .lettertonina {
   margin: 40px;
@@ -160,11 +183,11 @@
 
 #fredagsmail {
   padding: 40px;
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin: auto;
 }
 
@@ -195,6 +218,12 @@
   background-color: var(--purplebrown);
   color: var(--creme) !important;
   transition: 0.2s;
+}
+
+#meditation {
+  color: var(--purplebrown);
+  text-decoration: underline;
+  display: none;
 }
 
 /* ------------MEDIA QUIERIES------------ */

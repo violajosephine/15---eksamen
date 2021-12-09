@@ -18,16 +18,20 @@ main {
 #tilskud,
 #ventetid,
 #online,
-#afbestilling,
+#afbud,
 #utilsigtet {
-  max-width: 1000px;
+  max-width: 800px;
   padding: 40px;
   padding-top: 100px;
   padding-bottom: 0;
   margin: auto;
-  margin-bottom: 0 !important;
+  margin-bottom: -20px !important;
 }
 
 #utilsigtet {
   padding-bottom: 70px;
+}
+
+main a {
+  color: var(--purplebrown);
 }
