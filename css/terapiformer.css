@@ -1,0 +1,300 @@
+/* --------------ROOT------------- */
+:root {
+  --white: #ffffff;
+  --creme: #f2ede2;
+  --hasselnut: #d8cdc2;
+  --purplebrown: #4c0b05;
+  --pinetree: #738153;
+
+  --lust: lust, serif;
+  --nunito: nunito-sans, sans-serif;
+}
+
+main {
+  margin-top: 100px;
+}
+
+main div {
+  margin-bottom: 0 !important;
+}
+
+main h2 {
+  padding-bottom: 0;
+}
+q {
+  display: block;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* -----------------INTRO----------------- */
+
+h2,
+.intro_text1,
+.kognitive_text1,
+.kognitive_text2,
+.kognitive_text3,
+.kognitive_text4,
+.act_text1,
+.act_text2,
+.mm_text1,
+.mm_text2,
+.mm_text3,
+.mm_text4,
+.buddisme_text1,
+.buddisme_text2,
+.cocktail_text1 {
+  max-width: 800px;
+  padding: 20px;
+  margin: auto;
+}
+
+#intro,
+#kognitive,
+#act,
+#medi_mindful,
+#buddisme,
+#cocktail {
+  padding-bottom: 30px;
+}
+
+#intro_vid {
+  max-width: 100%;
+  color: var(--white);
+  position: relative;
+}
+
+#intro h2 {
+  position: absolute;
+  z-index: 5;
+  color: var(--white);
+  left: 25%;
+  top: 700px;
+  font-size: 2rem;
+  margin: auto;
+  max-width: 650px;
+  margin: 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#intro {
+  margin-bottom: 0 !important;
+}
+
+/* --------------KOGNITIVE-------------- */
+
+.kognitive_img {
+  background-image: url(../assets/images_website/light_crack.jpg);
+  height: 700px;
+  width: 100%;
+  text-align: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kognitive_img h3 {
+  text-align: center;
+  color: var(--white);
+  padding-top: ;
+}
+
+/* ---------------ACT--------------- */
+
+.mm_audio {
+  border: 2px var(--purplebrown);
+  background-color: var(--creme);
+  margin: auto;
+  padding: 30px;
+  display: inherit;
+}
+
+/* -----------MEDITATION OG MINDFULNESS----------- */
+
+/* ------------MEDITATIONS BLOMST------------ */
+#blomsttext {
+  display: flex;
+  justify-content: center;
+}
+
+.text1 {
+  font-size: 2em;
+  /* text-transform: uppercase; */
+  text-align: center;
+  animation: text1 16s infinite;
+  position: absolute;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes text1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.text2 {
+  font-size: 2em;
+  /* text-transform: uppercase; */
+  text-align: center;
+  animation: text2 16s infinite;
+  position: absolute;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@keyframes text2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#blomst {
+  padding: 70px;
+  padding-bottom: 80px;
+}
+.wrapper {
+  margin-top: 18vw;
+  height: 125px;
+  width: 125px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  animation: pulse 8s cubic-bezier(0.5, 0, 0.5, 1) alternate infinite;
+}
+.circle {
+  opacity: 0.7;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+  position: absolute;
+  transform: (translate(0, 0));
+  mix-blend-mode: screen;
+  /* box-shadow: white 0px 0px 40px 0px; */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.circle:nth-child(1) {
+  animation: circle1 8s ease alternate infinite;
+  background-color: #28e5f5;
+}
+.circle:nth-child(2) {
+  animation: circle2 8s ease alternate infinite;
+  background-color: #0ff531;
+}
+.circle:nth-child(3) {
+  animation: circle3 8s ease alternate infinite;
+  background-color: #e754ff;
+}
+.circle:nth-child(4) {
+  animation: circle4 8s ease alternate infinite;
+  background-color: #ffda00;
+}
+.circle:nth-child(5) {
+  animation: circle5 8s ease alternate infinite;
+  background-color: #ff6041;
+}
+.circle:nth-child(6) {
+  animation: circle6 8s ease alternate infinite;
+  background-color: #ffb200;
+}
+
+@keyframes circle1 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-35px, -50px);
+  }
+}
+@keyframes circle2 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(35px, -50px);
+  }
+}
+@keyframes circle3 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-60px, 0px);
+  }
+}
+@keyframes circle4 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(60px, 0px);
+  }
+}
+@keyframes circle5 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-35px, 50px);
+  }
+}
+@keyframes circle6 {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(35px, 50px);
+  }
+}
+
+/* ------------MEDIA QUIERIES------------ */
+@media screen and (max-width: 1000px) {
+  #intro h2 {
+    font-size: 1.5rem;
+    top: 600px;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 750px) {
+  #intro h2 {
+    font-size: 1rem;
+    top: 500px;
+    left: 10%;
+  }
+}

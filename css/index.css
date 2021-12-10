@@ -47,10 +47,11 @@
   flex-direction: column;
   align-items: center;
   color: var(--white);
-  background-image: url(../assets/images_website/whitelines.png);
+  background-image: url(../assets/images_website/greengrowth.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: right;
+  background-attachment: fixed;
   margin-bottom: 100px !important;
 }
 
@@ -87,12 +88,14 @@
 
 .carousel-inner {
   margin: auto;
+  padding-bottom: 0 !important;
   max-width: 800px;
 }
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
   background-color: var(--white);
+  border: var(--purplebrown) 2px solid;
 }
 
 .carousel-control-next,
@@ -118,7 +121,7 @@
 
 .text_letter {
   text-align: center;
-  max-width: 400px;
+  max-width: 500px;
   font-size: 1.3rem;
 }
 .lettertonina {
@@ -183,7 +186,7 @@
 
 #fredagsmail {
   padding: 40px;
-  padding-bottom: 100px;
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -224,6 +227,18 @@
   color: var(--purplebrown);
   text-decoration: underline;
   display: none;
+}
+
+/* ------------GROWTH RINGS------------ */
+
+#growthrings {
+  background-image: url(../assets/images_website/growthrings.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 150px;
+  background-color: var(--purplebrown);
+  box-shadow: 0px 0px 5px grey;
 }
 
 /* ------------MEDIA QUIERIES------------ */
