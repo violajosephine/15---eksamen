@@ -14,10 +14,6 @@ main {
   margin-top: 100px;
 }
 
-main div {
-  margin-bottom: 0 !important;
-}
-
 main h2 {
   padding-bottom: 0;
 }
@@ -45,7 +41,7 @@ h2,
 .buddisme_text2,
 .cocktail_text1 {
   max-width: 800px;
-  padding: 20px;
+  padding: 15px;
   margin: auto;
 }
 
@@ -59,9 +55,14 @@ h2,
 }
 
 #intro_vid {
-  max-width: 100%;
+  max-height: 500px;
+  width: 100%;
   color: var(--white);
-  position: relative;
+  overflow: hidden;
+}
+
+#intro_vid video {
+  width: 100%;
 }
 
 #intro h2 {
@@ -69,7 +70,7 @@ h2,
   z-index: 5;
   color: var(--white);
   left: 25%;
-  top: 700px;
+  top: 200px;
   font-size: 2rem;
   margin: auto;
   max-width: 650px;
@@ -79,6 +80,7 @@ h2,
 
 #intro {
   margin-bottom: 0 !important;
+  overflow: hidden;
 }
 
 /* --------------KOGNITIVE-------------- */
@@ -94,11 +96,12 @@ h2,
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .kognitive_img h3 {
   text-align: center;
   color: var(--white);
-  padding-top: ;
 }
 
 /* ---------------ACT--------------- */
@@ -112,6 +115,31 @@ h2,
 }
 
 /* -----------MEDITATION OG MINDFULNESS----------- */
+
+#faktaboks_numb {
+  height: 1500px;
+  width: 100%;
+  background-color: var(--hasselnut);
+  background-image: url(../assets/images_website/whitelines.png);
+  background-size: cover;
+  /* background-attachment: fixed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 20px !important;
+  overflow: hidden;
+}
+
+#numb_text {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  max-width: 550px;
+  padding: 30px;
+  bottom: 10px;
+  margin-top: 20px;
+}
 
 /* ------------MEDITATIONS BLOMST------------ */
 #blomsttext {
@@ -211,27 +239,27 @@ h2,
 }
 .circle:nth-child(1) {
   animation: circle1 8s ease alternate infinite;
-  background-color: #28e5f5;
+  background-color: var(--pinetree);
 }
 .circle:nth-child(2) {
   animation: circle2 8s ease alternate infinite;
-  background-color: #0ff531;
+  background-color: var(--pinetree);
 }
 .circle:nth-child(3) {
   animation: circle3 8s ease alternate infinite;
-  background-color: #e754ff;
+  background-color: var(--pinetree);
 }
 .circle:nth-child(4) {
   animation: circle4 8s ease alternate infinite;
-  background-color: #ffda00;
+  background-color: var(--pinetree);
 }
 .circle:nth-child(5) {
   animation: circle5 8s ease alternate infinite;
-  background-color: #ff6041;
+  background-color: var(--pinetree);
 }
 .circle:nth-child(6) {
   animation: circle6 8s ease alternate infinite;
-  background-color: #ffb200;
+  background-color: var(--pinetree);
 }
 
 @keyframes circle1 {
@@ -283,18 +311,24 @@ h2,
   }
 }
 
+/* -------------COCKTAIL------------- */
+
+#cocktail img {
+  max-width: 300px;
+  margin: auto;
+  display: block;
+}
+
 /* ------------MEDIA QUIERIES------------ */
 @media screen and (max-width: 1000px) {
   #intro h2 {
     font-size: 1.5rem;
-    top: 600px;
+
     left: 10%;
   }
 }
 @media screen and (max-width: 750px) {
   #intro h2 {
-    font-size: 1rem;
-    top: 500px;
     left: 10%;
   }
 }
